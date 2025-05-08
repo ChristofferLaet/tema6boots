@@ -7,55 +7,181 @@
     <meta name="description" content="Bootstrap Template">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.css">
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/vendor/natur.css">
 </head>
-<!DOCTYPE html>
-<html lang="en">
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">MyLogo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Web Design</a></li>
-                        <li><a class="dropdown-item" href="#">SEO</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
+<!-- Navbar med burgermenu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="forside.html">
+        <img src= "Forside-billeder/Logo.jpg" alt="Logo" style="width: 150px; height: auto;">
+    </a>
+    <button class="navbar-toggler" type="button" id="navbarToggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Seværdigheder</a>
+            <a class="nav-item nav-link" href="#">Events</a>
+            <a class="nav-item nav-link" href="#">Ophold</a>
+            <a class="nav-item nav-link" href="natur.html">Natur</a>
+            <a class="nav-item nav-link" href="#">Mad & Drikke</a>
         </div>
     </div>
 </nav>
 
-<!-- Main Content Grid -->
-<div class="container mt-4">
-    <div class="row">
-        <!-- Main Content -->
-        <section class="col-lg-12 col-md-12 content">
-            <h2>Main Content</h2>
-            <p>This section adjusts based on screen size.</p>
-        </section>
-    </div>
-</div>
+<header>
+    <img class="image1" src="Event-billeder/front.png">
+</header>
 
-<!-- Footer -->
-<footer class="footer mt-4">
-    <div class="container">
-        <p>© 2025 My Website. All Rights Reserved.</p>
+
+<!-- Main Content -->
+<main>
+    <section class="månede withs">
+        <article>
+            <figure>
+        <div class="month-selector" tabindex="0" onwheel="handleScroll(event)">
+            <div class="left-button">Vælg Måned</div>
+            <button class="right-button" onclick="nextMonth()">Januar</button>
+        </div>
+
+        <script>
+            const months = [
+                "Januar", "Februar", "Marts", "April", "Maj", "Juni",
+                "Juli", "August", "September", "Oktober", "November", "December"
+            ];
+
+            let currentIndex = 0;
+            const button = document.querySelector('.right-button');
+            const selector = document.querySelector('.month-selector');
+
+            function updateMonth() {
+                button.textContent = months[currentIndex];
+            }
+
+            function nextMonth() {
+                currentIndex = (currentIndex + 1) % months.length;
+                updateMonth();
+            }
+
+            function prevMonth() {
+                currentIndex = (currentIndex - 1 + months.length) % months.length;
+                updateMonth();
+            }
+
+            function handleScroll(e) {
+                e.preventDefault();
+                if (e.deltaY > 0) nextMonth();
+                else prevMonth();
+            }
+
+            selector.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                    nextMonth();
+                } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                    prevMonth();
+                }
+            });
+
+            // Ensure focus so keyboard works
+            selector.focus();
+        </script>
+            </figure>
+        </article>
+
+    </section>
+
+
+    <section class="weekender">
+        <div class="container">
+            <h2 class="fw-bold">Dato: 17/18</h2>
+            <div class="row g-3">
+
+                <!-- Card 1 -->
+                <div class="col-4">
+                    <a href="https://example.com/card1" class="card-link">
+                        <div class="card custom-card shadow-sm">
+                            <img src="Event-billeder/udendørs.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h2 class="btn btn-light mb-2 fw-bold">Udendørs madlavning</h2>
+                                <p class="card-text text-muted">Short description here.</p>
+                                <div class="info-section">
+                                    <figur>
+                                    <span>Dato: 17.5</span>
+                                    <img src="Event-billeder/image1111.png" alt="icon">
+                                    </figur>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-4">
+                    <a href="https://example.com/card2" class="card-link">
+                        <div class="card custom-card shadow-sm">
+                            <img src="Event-billeder/fodbold.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h2 class="btn btn-light mb-2 fw-bold">Fodboldkamp NordicBet Liga</h2>
+                                <p class="card-text text-muted">Second card info text.</p>
+                                <div class="info-section">
+                                    <figur>
+                                    <span>Dato: 17.5</span>
+                                    <img src="Event-billeder/image1111.png" alt="icon">
+                                    </figur>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-4">
+                    <a href="https://example.com/card3" class="card-link">
+                        <div class="card custom-card shadow-sm">
+                            <img src="Event-billeder/vandring.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h2 class="btn btn-light mb-2 fw-bold">Byvandring i Gamle Køge bymidte</h2>
+                                <p class="card-text text-muted">Third card's small content.</p>
+                                <div class="info-section">
+                                    <figur> <!-- fejlkode, som virkede bedre end figure, så den blev løsningen -->
+                                    <span>Dato: 18.5</span>
+                                    <img src="Event-billeder/image1111.png" alt="icon">
+                                    </figur>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="andre">
+
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-left">
+        <h2>KøgeWeekend</h2>
+        <p>Strandgade 42, 4600 Køge</p>
+    </div>
+    <div class="footer-right">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+        </a>
     </div>
 </footer>
+
+
 
 </body>
 </html>
