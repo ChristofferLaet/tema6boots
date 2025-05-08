@@ -2,10 +2,6 @@ body
 { background-color: #ECBE71;}
 
 
-h1,h2,h3,h4,h5,h6, p
-{font-family: 'Roboto Mono', monospace;
-    text-align: center;}
-
 h3 {margin-top: 50px;
     font-weight: bold;}
 
@@ -31,3 +27,66 @@ h4 {font-weight: bold;}
     display: block;
     margin: 0 auto;
 }
+
+
+
+
+
+/*********************************************** KOPIER HERFRA /*********************************************
+/* Fonten bliver den samme på hele brødteksten og teksten bliver centreret i midten*/
+h1,h2,h3,h4,h5,h6, p
+{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+/* Navigationsbar*/
+.navbar {
+    background-color: #e9a949 !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: #ffffff !important; /* Hvid tekst */
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #f0f0f0 !important; /* Lidt lysere hvid – for fin effekt */
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e9a949; /* varmere og mørkere end siden, men i samme tonefamilie */
+    color: #2c2c2c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+}
+
+.footer-left h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #2c2c2c;
+}
+
+.footer-left p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #2c2c2c;
+}
+
+.footer-right img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* gør hvide ikoner lidt blødere */
+    transition: transform 0.2s ease;
+}
+
+.footer-right img:hover {
+    transform: scale(1.1);
+}
+/*********************************************** KOPIER HERTIL /*********************************************
