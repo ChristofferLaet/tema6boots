@@ -1,0 +1,99 @@
+body
+{ background-color: #ECBE71;}
+
+
+h1,h2,h3,h4,h5,h6, p
+{font-family: 'Roboto Mono', monospace;
+    text-align: center;}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {font-size: 30px;
+    margin-top: 20px;}
+
+h4 {margin-top: 30px;
+    font-size: 20px;}
+
+.forside-billeder-container1,
+.forside-billeder-container2,
+.forside-billeder-container3 {
+    margin: 0; /* Fjern margin fra containerne */
+    padding: 0; /* Fjern padding fra containerne */
+    flex: 1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.forside-billeder-container1 {
+    display: flex;
+    justify-content: space-between; /* Fordeler billederne jævnt */
+    align-items: stretch; /* Gør billederne lige høje */
+    gap: 10px; /* Lidt afstand mellem billederne */
+    width: 100%; /* Container fylder hele bredden */
+
+}
+
+.forside-billeder-container1 img {
+    flex: 1; /* Gør billederne lige store */
+    width: 100%; /* Billedet fylder kun 100% af containeren */
+    height: auto; /* Billedet får sin naturlige højde baseret på bredden */
+    object-fit: contain; /* Sikrer at hele billedet er synligt uden at blive beskåret */
+    margin-top: 40px;
+}
+
+.forside-billeder-container2 {
+    display: flex;
+    justify-content: space-between; /* Fordeler billederne jævnt */
+    align-items: stretch; /* Gør billederne lige høje */
+    gap: 10px; /* Lidt afstand mellem billederne */
+    width: 100%; /* Container fylder hele bredden */
+}
+
+.forside-billeder-container2 img {
+    flex: 1; /* Gør billederne lige store */
+    width: 100%; /* Billedet fylder kun 100% af containeren */
+    height: auto; /* Billedet får sin naturlige højde baseret på bredden */
+    object-fit: contain; /* Sikrer at hele billedet er synligt uden at blive beskåret */
+}
+
+
+.forside-billeder-container3 {
+    display: flex;
+    justify-content: space-between; /* Fordeler billederne jævnt */
+    align-items: stretch; /* Gør billederne lige høje */
+    gap: 10px; /* Lidt afstand mellem billederne */
+    width: 100%; /* Container fylder hele bredden */
+
+}
+
+.forside-billeder-container3 img {
+    flex: 1; /* Gør billederne lige store */
+    width: 100%; /* Billedet fylder kun 100% af containeren */
+    height: auto; /* Billedet får sin naturlige højde baseret på bredden */
+    object-fit: contain; /* Sikrer at hele billedet er synligt uden at blive beskåret */
+}
+
+.forside-billeder-container4 {
+    display: flex;
+    justify-content: space-between; /* Fordeler billederne jævnt */
+    align-items: stretch; /* Gør billederne lige høje */
+    gap: 10px; /* Lidt afstand mellem billederne */
+    width: 100%; /* Container fylder hele bredden */
+
+}
+
+.forside-billeder-container4 img {
+    flex: 1; /* Gør billederne lige store */
+    width: 100%; /* Billedet fylder kun 100% af containeren */
+    height: auto; /* Billedet får sin naturlige højde baseret på bredden */
+    object-fit: contain; /* Sikrer at hele billedet er synligt uden at blive beskåret */

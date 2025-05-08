@@ -1,0 +1,33 @@
+body
+{ background-color: #ECBE71;}
+
+
+h1,h2,h3,h4,h5,h6, p
+{font-family: 'Roboto Mono', monospace;
+    text-align: center;}
+
+h3 {margin-top: 50px;
+    font-weight: bold;}
+
+h4 {font-weight: bold;}
+
+.natur-con-1,
+.natur-con-2,
+.natur-con-3,
+.natur-con-4,
+.natur-con-5{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.natur-con-1 img,
+.natur-con-2 img,
+.natur-con-3 img,
+.natur-con-4 img,
+.natur-con-5 img{
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* valgfrit – for at begrænse bredden på store skærme */
+    display: block;
+    margin: 0 auto;
+}
