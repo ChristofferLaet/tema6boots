@@ -47,12 +47,12 @@
 
 <header>
     <div class="container">
-        <img class="holy" src="front.png" alt="havnen">
+        <img class="holy" src="Event-billeder/front.png" alt="havnen">
 
-<!-- knappen virkede kun hvis der ikke var en anden overskrift ovenover på billedet.
-        <div class="centered"><button type="button" class="btn btn-success">Centered</button></div>
-        <br>
--->
+        <!-- knappen virkede kun hvis der ikke var en anden overskrift ovenover på billedet.
+                <div class="centered"><button type="button" class="btn btn-success">Centered</button></div>
+                <br>
+        -->
 
         <div class="centered"><h2><strong>Event</strong></h2></div>
     </div>
@@ -67,52 +67,52 @@
     <section class="månede withs">
         <article>
             <figure>
-        <div class="month-selector" tabindex="0" onwheel="handleScroll(event)">
-            <div class="left-button">Vælg Måned</div>
-            <button class="right-button" onclick="nextMonth()">Januar</button>
-        </div>
+                <div class="month-selector" tabindex="0" onwheel="handleScroll(event)">
+                    <div class="left-button">Vælg Måned</div>
+                    <button class="right-button" onclick="nextMonth()">Januar</button>
+                </div>
 
-        <script>
-            const months = [
-                "Januar", "Februar", "Marts", "April", "Maj", "Juni",
-                "Juli", "August", "September", "Oktober", "November", "December"
-            ];
+                <script>
+                    const months = [
+                        "Januar", "Februar", "Marts", "April", "Maj", "Juni",
+                        "Juli", "August", "September", "Oktober", "November", "December"
+                    ];
 
-            let currentIndex = 0;
-            const button = document.querySelector('.right-button');
-            const selector = document.querySelector('.month-selector');
+                    let currentIndex = 0;
+                    const button = document.querySelector('.right-button');
+                    const selector = document.querySelector('.month-selector');
 
-            function updateMonth() {
-                button.textContent = months[currentIndex];
-            }
+                    function updateMonth() {
+                        button.textContent = months[currentIndex];
+                    }
 
-            function nextMonth() {
-                currentIndex = (currentIndex + 1) % months.length;
-                updateMonth();
-            }
+                    function nextMonth() {
+                        currentIndex = (currentIndex + 1) % months.length;
+                        updateMonth();
+                    }
 
-            function prevMonth() {
-                currentIndex = (currentIndex - 1 + months.length) % months.length;
-                updateMonth();
-            }
+                    function prevMonth() {
+                        currentIndex = (currentIndex - 1 + months.length) % months.length;
+                        updateMonth();
+                    }
 
-            function handleScroll(e) {
-                e.preventDefault();
-                if (e.deltaY > 0) nextMonth();
-                else prevMonth();
-            }
+                    function handleScroll(e) {
+                        e.preventDefault();
+                        if (e.deltaY > 0) nextMonth();
+                        else prevMonth();
+                    }
 
-            selector.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-                    nextMonth();
-                } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-                    prevMonth();
-                }
-            });
+                    selector.addEventListener('keydown', (e) => {
+                        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                            nextMonth();
+                        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                            prevMonth();
+                        }
+                    });
 
-            // Ensure focus so keyboard works
-            selector.focus();
-        </script>
+                    // Ensure focus so keyboard works
+                    selector.focus();
+                </script>
             </figure>
         </article>
     </section>
@@ -125,69 +125,69 @@
 
     <section class="weekender">
         <article>
-        <div class="container">
-            <h2 class="fw-bold">Dato: 17/18</h2>
-            <div class="row g-3">
+            <div class="container">
+                <h2 class="fw-bold">Dato: 17/18</h2>
+                <div class="row g-3">
 
-                <!-- Card 1 -->
-                <div class="col-4">
-                    <a href="https://www.visitkoege.dk/koege/oplevelser/koege-events#tmplid=arrmore&ArrNr=18396081" class="card-link">
-                        <div class="card custom-card shadow-sm">
-                            <img src="Event-billeder/udendoers.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h2 class="btn btn-light mb-2 fw-bold">Udendørs madlavning</h2>
-                                <p class="card-text text-muted">Kom til en hyggelig madlavningsdag, nu med røg, med bydelsforeningen.</p>
-                                <div class="info-section">
-                                    <figur>
-                                    <span>Dato: 17.5</span>
-                                    <img src="Event-billeder/image1111.png" alt="icon">
-                                    </figur>
+                    <!-- Card 1 -->
+                    <div class="col-4">
+                        <a href="https://www.visitkoege.dk/koege/oplevelser/koege-events#tmplid=arrmore&ArrNr=18396081" class="card-link">
+                            <div class="card custom-card shadow-sm">
+                                <img src="Event-billeder/udendoers.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2 class="btn btn-light mb-2 fw-bold">Udendørs madlavning</h2>
+                                    <p class="card-text text-muted">Kom til en hyggelig madlavningsdag, nu med røg, med bydelsforeningen.</p>
+                                    <div class="info-section">
+                                        <figur>
+                                            <span>Dato: 17.5</span>
+                                            <img src="Event-billeder/image1111.png" alt="icon">
+                                        </figur>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
-                <!-- Card 2 -->
-                <div class="col-4">
-                    <a href="https://www.visitkoege.dk/koege/oplevelser/koege-events#tmplid=arrmore&ArrNr=18657965" class="card-link">
-                        <div class="card custom-card shadow-sm">
-                            <img src="Event-billeder/fodbold.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h2 class="btn btn-light mb-2 fw-bold">Fodboldkamp NordicBet Liga</h2>
-                                <p class="card-text text-muted">Capelli Sport Stadion, Køge Idrætspark</p>
-                                <div class="info-section">
-                                    <figur>
-                                    <span>Dato: 17.5</span>
-                                    <img src="Event-billeder/image1111.png" alt="icon">
-                                    </figur>
+                    <!-- Card 2 -->
+                    <div class="col-4">
+                        <a href="https://www.visitkoege.dk/koege/oplevelser/koege-events#tmplid=arrmore&ArrNr=18657965" class="card-link">
+                            <div class="card custom-card shadow-sm">
+                                <img src="Event-billeder/fodbold.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2 class="btn btn-light mb-2 fw-bold">Fodboldkamp NordicBet Liga</h2>
+                                    <p class="card-text text-muted">Capelli Sport Stadion, Køge Idrætspark</p>
+                                    <div class="info-section">
+                                        <figur>
+                                            <span>Dato: 17.5</span>
+                                            <img src="Event-billeder/image1111.png" alt="icon">
+                                        </figur>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
-                <!-- Card 3 -->
-                <div class="col-4">
-                    <a href="https://www.visitkoege.dk/koege/oplevelser/koege-events#tmplid=arrmore&ArrNr=18508884" class="card-link">
-                        <div class="card custom-card shadow-sm">
-                            <img src="Event-billeder/vandring.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h2 class="btn btn-light mb-2 fw-bold">Byvandring i Gamle Køge bymidte</h2>
-                                <p class="card-text text-muted">Den perfekte introduktion til Køges rige historie.</p>
-                                <div class="info-section">
-                                    <figur> <!-- fejlkode, som virkede bedre end figure, så den blev løsningen -->
-                                    <span>Dato: 18.5</span>
-                                    <img src="Event-billeder/image1111.png" alt="icon">
-                                    </figur>
+                    <!-- Card 3 -->
+                    <div class="col-4">
+                        <a href="https://www.visitkoege.dk/koege/oplevelser/koege-events#tmplid=arrmore&ArrNr=18508884" class="card-link">
+                            <div class="card custom-card shadow-sm">
+                                <img src="Event-billeder/vandring.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2 class="btn btn-light mb-2 fw-bold">Byvandring i Gamle Køge bymidte</h2>
+                                    <p class="card-text text-muted">Den perfekte introduktion til Køges rige historie.</p>
+                                    <div class="info-section">
+                                        <figur> <!-- fejlkode, som virkede bedre end figure, så den blev løsningen -->
+                                            <span>Dato: 18.5</span>
+                                            <img src="Event-billeder/image1111.png" alt="icon">
+                                        </figur>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
+                </div>
             </div>
-        </div>
         </article>
         <br>
         <br>

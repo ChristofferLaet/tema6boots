@@ -1,0 +1,14 @@
+.section-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.btn-custom {
+    white-space: nowrap;
+}
+
+.farve{
+    background-color: #258400;
+}
