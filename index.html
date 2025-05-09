@@ -1,65 +1,91 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello, Bootstrap</title>
-    <meta name="description" content="Bootstrap Template">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Scripts -->
-    <script src="js/vendor/bootstrap.bundle.min.js" defer></script>
-    <script src="js/script.js" defer></script>
-</head>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/forside.css">
+
+
+  <title>Køge Weekend</title>
+</head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">MyLogo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Web Design</a></li>
-                        <li><a class="dropdown-item" href="#">SEO</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
-        </div>
+<!------------------------------------------------------------Kopier herfra-------------------------------------------->
+<!-- Navbar med burgermenu -->
+<nav class="navbar navbar-expand-lg" style="background-color: #e9a949;">
+  <a class="navbar-brand" href="index.html">
+    <img src= "Forside-billeder/Logo.jpg" alt="Logo" style="width: 150px; height: auto;">
+  </a>
+  <button class="navbar-toggler" type="button" id="navbarToggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Seværdigheder</a>
+      <a class="nav-item nav-link" href="Events.html">Events</a>
+      <a class="nav-item nav-link" href="ophold.html">Ophold</a>
+      <a class="nav-item nav-link" href="natur.html">Natur</a>
+      <a class="nav-item nav-link" href="#">Mad & Drikke</a>
     </div>
+  </div>
 </nav>
+<!------------------------------------------------------------Kopier hertil-------------------------------------------->
 
-<!-- Main Content Grid -->
-<div class="container mt-4">
-    <div class="row">
-        <!-- Main Content -->
-        <section class="col-lg-12 col-md-12 content">
-            <h2>Main Content</h2>
-            <p>This section adjusts based on screen size.</p>
-        </section>
-    </div>
+
+
+<h1>Udforsk Køge</h1>
+<h2>En hyggelig weekend fyldt med indtryk</h2>
+
+
+<div class="forside-billeder-container1">
+  <img src="Forside-billeder/Køge-hjerte.jpg" alt="Køge By">
 </div>
 
-<!-- Footer -->
-<footer class="footer mt-4">
-    <div class="container">
-        <p>© 2025 My Website. All Rights Reserved.</p>
-    </div>
+
+
+
+<div class="forside-billeder-container2">
+  <img src="Forside-billeder/Køge-by-forside.webp" alt="Billede af Køges gamle bygninger">
+</div>
+<h3>Historie, natur og hygge <br> Oplevelser for alle aldre i Køge</h3>
+<div class="forside-billeder-container3">
+  <img src="Forside-billeder/Koge-Aas.webp" alt="Køge Aas">
+</div>
+
+<div class="forside-billeder-container4">
+  <img src="Forside-billeder/Koge-havn.jpg" alt="Køge Miniby">
+</div>
+<h4>Find inspiration til en weekend fyldt med historiske seværdigheder, naturskønne gåture, lokale spisesteder og hyggelige aktiviteter for både par, familier og ældre.  Her samles alt det, der gør Køge til det perfekte sted for et afslappende og spændende ophold.</h4>
+
+<!------------------------------------------------------------Kopier herfra-------------------------------------------->
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">
+    <h2>KøgeWeekend</h2>
+    <p>Strandgade 42, 4600 Køge</p>
+  </div>
+  <div class="footer-right">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+    </a>
+  </div>
 </footer>
+
+
+<!-- Inkluderer nødvendige JavaScript-filer for Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("navbarToggle").addEventListener("click", function() {
+    var nav = document.getElementById("navbarNavAltMarkup");
+    if (nav.classList.contains("collapse")) {
+      nav.classList.remove("collapse");
+    } else {
+      nav.classList.add("collapse");
+    }
+  });
+</script>
+<!------------------------------------------------------------Kopier hertil-------------------------------------------->
 
 </body>
 </html>
