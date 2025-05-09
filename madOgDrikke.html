@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/forside.css">
+  <title>Mad & Drikke</title>
+</head>
+
+<body>
+<!-- Navbar med burgermenu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="madOgDrikke.html">
+    <img src= "Forside-billeder/Logo.jpg" alt="Logo" style="width: 150px; height: auto;">
+
+  </a>
+  <button class="navbar-toggler" type="button" id="navbarToggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="seværdigheder.html">Seværdigheder</a>
+      <a class="nav-item nav-link" href="#">Events</a>
+      <a class="nav-item nav-link" href="#">Ophold</a>
+      <a class="nav-item nav-link" href="natur.html">Natur</a>
+      <a class="nav-item nav-link" href="madOgDrikke.html">Mad & Drikke</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Inkluderer nødvendige JavaScript-filer for Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.getElementById("navbarToggle").addEventListener("click", function() {
+    var nav = document.getElementById("navbarNavAltMarkup");
+    if (nav.classList.contains("collapse")) {
+      nav.classList.remove("collapse");
+    } else {
+      nav.classList.add("collapse");
+    }
+  });
+</script>
+
+<!-- Inkluderer nødvendige JavaScript-filer for Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<h1>Mad & Drikke</h1>
+<h2>En hyggelig weekend fyldt med oplevelser</h2>
+</section>
+
+<div class="Mad-drikke-billeder-container1">
+  <img src="madDrikke01.jpg" alt="Ibsens Pub & Vinbar">
+</div>
+
+<section>
+  <p>I Køge kan du opleve Danmarks største torvedag om onsdagen og lørdagen: det er Danmarks største, og har kørt i over 700 år!</p>
+  <button class="btn btn-success" onclick=" window.open('https://www.visitkoege.dk/koege/oplevelser/shopping/torvedage-paa-koege-torv','_blank')"> Læs mere</button>
+  <p/>
+  </a>
+
+</section>
+
+<div class="Mad-drikke-billeder-container2">
+  <img src="Mad-Drikke-billeder/madDrikke02.jpg" alt="The Old Irish Pub ved havnen">
+</div>
+
+<section>
+  <p>Oplev Køges historie på en vandring igennem den gamle midtby, og find og opleve mere af det gamle på tolv forskellige lokationer spredt ud over Køge by.</p>
+  <button class="btn btn-success" onclick=" window.open('https://www.visitkoege.dk/koege/oplevelser/digital-byvandring-i-den-gamle','_blank')"> Læs mere</button>
+  <p/>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">
+    <h2>KøgeWeekend</h2>
+    <p>Strandgade 42, 4600 Køge</p>
+  </div>
+  <div class="footer-right">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+    </a>
+  </div>
+</footer>
+
+</body>
