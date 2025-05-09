@@ -31,6 +31,18 @@
             <a class="nav-item nav-link" href="#">Mad & Drikke</a>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("navbarToggle").addEventListener("click", function() {
+            var nav = document.getElementById("navbarNavAltMarkup");
+            if (nav.classList.contains("collapse")) {
+                nav.classList.remove("collapse");
+            } else {
+                nav.classList.add("collapse");
+            }
+        });
+    </script>
 </nav>
 
 <header>
